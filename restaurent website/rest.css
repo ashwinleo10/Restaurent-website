@@ -1,0 +1,340 @@
+html{
+    background-color: rgb(50, 4, 69);
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    position: relative;
+   
+}
+article{
+    margin-top: 10rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    color: whitesmoke;
+    position: sticky;
+    top: 0;
+    background-color: rgb(50, 4, 69);
+    z-index: 10;
+}
+header h1{
+    flex:1;
+    font-family: cursive;
+    color: orange;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+header #nav{
+    display: flex;
+    flex: auto;
+    margin-top: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+header #nav a:hover{
+    color: orange;
+}
+header #nav .nav{
+    margin-right: 3rem;
+    font-size: 18px;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:0 10vw;
+    justify-content: space-around;
+}
+#main .main{
+    flex: 1;
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    color: whitesmoke;
+}
+#main .main h1{
+    color: orange;
+    margin-bottom: 1rem;
+}
+#main .main input{
+    background-color: orange;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    border-color: orange;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+#main .main input:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 165, 0, 0.7);
+    box-shadow: 5px 5px 10px bisque;
+}
+#main figure{
+    width: 400px;
+    justify-self: center;
+}
+#main figure img{
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+}
+#about{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding:0 10vw;
+    justify-content: space-between;
+    column-gap: 300px;
+}
+#about figure{
+
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    justify-self: center;
+}
+#about figure img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#about .about{
+    flex: 2;
+justify-self: flex-end;
+}
+#about .about .h1{
+    color: white;
+    margin-bottom: 1rem;
+}
+#about .about{
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    color: whitesmoke;
+}
+#about .about #p{
+    color: orange;
+}
+#about .about p{
+    font-size: 1rem;
+}
+#about .about input{
+    background-color: orange;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    border-color: orange;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+#about .about input:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 165, 0, 0.7);
+    box-shadow: 5px 5px 10px bisque;
+}
+#menu h1,h3{
+    text-align: center;
+    color: orange;
+}
+#menu h1{
+    color: whitesmoke;
+}
+#menu .cards{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    gap: 2em;
+    margin-top: 3rem;
+}
+.card{
+    flex: 1;
+    max-width: 300px;
+    border: 2px solid bisque;
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.card .shop{
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 0;
+}
+.card .item{
+    width:70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    translate: -50% ;
+
+
+}
+.card p{
+    text-align: center;
+}
+.card :nth-child(3){
+    font-weight: bold;
+}
+.card :nth-child(5){
+    color: goldenrod;
+}
+#service .cards{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    gap: 2em;
+    margin-top: 3rem;
+}
+#service .card{
+     background-color: inherit;
+     border: none;
+}
+ #service .card .item{
+    width:40%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    translate: -50% ;
+}
+#service h1{
+    text-align: center;
+    color: whitesmoke;
+}
+#service  .card p{
+    color: whitesmoke;
+    text-align: left;
+}
+#talk .talk{
+    margin: 0 auto;
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: bisque;
+    border-radius: 20px;
+}
+#talk .talk button{
+    background-color: orange;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    border-color: orange;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+#talk .talk button:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 165, 0, 0.7);
+    box-shadow: 5px 5px 10px bisque;
+}
+ul{
+    list-style: none;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem;
+    justify-content: space-evenly;
+}
+footer div{
+    flex-shrink: none;
+    margin: 1rem;
+}
+footer h3{
+    color: whitesmoke;
+    padding: 5px 0;
+}
+footer a{
+    color: rgba(255, 228, 196,0.5);
+}
+.contact-us img{
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#menu .cards .card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px bisque;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    height: 100%;
+    width: 250px;
+    text-align: center;
+    background-color:  rgba(81, 59, 91, 0.5);
+    color: orange;
+    position: fixed;
+    right: -999px;
+    transition: all 0.3s;
+}
+.sidebar li{
+    padding: 30px 0;
+    border: 1px solid rgba(245, 245, 245,0.1);
+}
+.short{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 13;
+    color: whitesmoke;
+    margin: 1rem;
+    position: fixed;
+    cursor: pointer;
+}
+.short:hover{
+    box-shadow: 0 0 5px ;
+}
+.side{
+    position: relative;
+}
+.sidebar li:hover{
+    background-color: rgb(50, 4, 69);
+    box-shadow: 0 0 5px whitesmoke;
+}
+#check{
+    display: none;
+}
+
+@media screen and (min-width: 866px){
+    .short{
+        display: none;
+    }
+
+    #check:checked ~.sidebar{
+        right: -999px;
+    }
+}
+@media screen and (max-width: 866px){
+    .nav{
+        display:none;
+    }
+    #check:checked ~.sidebar{
+        right: 0px;
+    }
+}
