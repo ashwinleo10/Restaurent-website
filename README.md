@@ -1,1 +1,1 @@
-Restaurent website
+Restaurant website
